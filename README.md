@@ -24,12 +24,14 @@ DATABASEHOST= <your-db-host>
     2. Choose GitHub
     3. Select the forked repo
     4. Click on Deployment Options again and wait for it to complete
+    
 7. Open the KUDU debug console for your web app ( URL format is https://sitename.scm.azurewebsites.net) 
 Run the following command
 ```
 D:\home>CD d:\home\site\wwwroot
 D:\home\site\wwwroot>env\Scripts\python.exe manage.py migrate 
 ```
+
 8. Browse the site . You can access the django administration site with these credentials 
 User: djadmin
 Password: superuser 
