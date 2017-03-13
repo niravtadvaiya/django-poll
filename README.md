@@ -30,8 +30,10 @@ D:\home>CD d:\home\site\wwwroot
 D:\home\site\wwwroot>env\Scripts\python.exe manage.py migrate 
 ```
 * Browse the site . You can access the django administration site with these credentials 
+```
 User: djadmin
 Password: superuser 
+```
 
  
 
