@@ -1,3 +1,6 @@
-env\scripts\easy_install django
-env\scripts\easy_install psycopg2
-env\scripts\easy_install pytz
+env\scripts\pip install django
+
+env\scripts\pip install -U pip
+env\scripts\pip install psycopg2
+
+env\scripts\pip install pytz
