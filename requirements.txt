@@ -1,3 +1,3 @@
-django >=1.9, <2
-pytz
-psycopg2
+Django==1.10.6
+psycopg2==2.7.1
+pytz==2016.10
