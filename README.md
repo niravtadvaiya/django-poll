@@ -22,6 +22,13 @@ User: djadmin
 Password: superuser 
 ```
 
+## Upgrade python packages 
+You can upgrade Python packages using ```pip```.  Use the following command to upgrade your packages 
+
+```
+D:\home\sites\wwwroot>env\Scripts\pip install -U <packagename>
+```
+
 ## Troubleshooting
 * If you run into any database sync issues, then open the KUDU debug console for your web app ( URL format is https://sitename.scm.azurewebsites.net).Run the following DJANGO migrate command to sync the models in this app with your database. 
 
@@ -40,3 +47,7 @@ Then install the pacakge
 D:\home\site\wwwroot>env\Scripts\pip install <packagename>
 ```
 You can run ```d:\home\site\wwwroot\setup.cmd``` to perform this operation instead of manually uninstalling each python package. 
+
+
+
+
