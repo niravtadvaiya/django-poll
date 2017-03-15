@@ -15,12 +15,6 @@ DATABASEUSER = <your-db-user>
 DATABASEPASSWORD = <your-db-password>
 DATABASEHOST= <your-db-host>
 ```  
-* Open the KUDU debug console for your web app ( URL format is https://sitename.scm.azurewebsites.net).Run the following DJANGO migrate command to sync the models in this app with your database. 
-
-```
-D:\home>CD d:\home\site\wwwroot
-D:\home\site\wwwroot>env\Scripts\python.exe manage.py migrate 
-```
 
 * Browse the site . You can access the django administration site with these credentials 
 ```
@@ -28,5 +22,20 @@ User: djadmin
 Password: superuser 
 ```
 
- 
+## Troubleshooting
+* If you run into any database sync issues, then open the KUDU debug console for your web app ( URL format is https://sitename.scm.azurewebsites.net).Run the following DJANGO migrate command to sync the models in this app with your database. 
 
+```
+D:\home>CD d:\home\site\wwwroot
+D:\home\site\wwwroot>env\Scripts\python.exe manage.py migrate 
+```
+* If you noticed errors in d:\home\site\wwwroot\wfastcgi.log such as "Error loading module  xxxx" , then uninstall the packages and then reinstall. You can see the packages required in [requirements.txt](https://github.com/SunBuild/djangopollapp/blob/master/requirements.txt)
+
+First uninstall the package 
+```
+D:\home\site\wwwroot>env\Scripts\pip uninstall <packagename>
+```
+Then install the pacakge 
+```
+D:\home\site\wwwroot>env\Scripts\pip install <packagename>
+```
