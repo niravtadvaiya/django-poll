@@ -29,7 +29,7 @@ Password: superuser
 D:\home>CD d:\home\site\wwwroot
 D:\home\site\wwwroot>env\Scripts\python.exe manage.py migrate 
 ```
-* If you noticed errors in d:\home\site\wwwroot\wfastcgi.log such as "Error loading module  xxxx" , then uninstall the packages and then reinstall. You can see the packages required in [requirements.txt](https://github.com/SunBuild/djangopollapp/blob/master/requirements.txt)
+* If you noticed errors in d:\home\site\wwwroot\wfastcgi.log such as "Error loading module  xxxx" , then uninstall the packages and then reinstall. You can see the packages required in [requirements.txt](https://github.com/SunBuild/djangopollapp/blob/master/requirements.txt) .
 
 First uninstall the package 
 ```
@@ -39,3 +39,4 @@ Then install the pacakge
 ```
 D:\home\site\wwwroot>env\Scripts\pip install <packagename>
 ```
+You can run ```d:\home\site\wwwroot\setup.cmd``` to perform this operation instead of manually uninstalling each python package. 
