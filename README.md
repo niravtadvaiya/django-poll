@@ -6,7 +6,7 @@ This application is a sample Django polls application using Postgres database
  
 ## Set up on Azure
 * Create a Postgres server and database on Azure . Many options are available for postgres as listed [here](https://azure.microsoft.com/en-us/search/marketplace/?q=postgres).
-* Import the database schema in the [djangopollschema.sql](https://github.com/SunBuild/djangopollapp/blob/master/djangopollschema.sql)
+* Import the database schema in the [djangopollschema.sql](https://github.com/SunBuild/django-poll/blob/master/djangopollschema.sql)
 * Click on [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
 * Add AppSettings (key/value pair) for your web app 
 ```
