@@ -77,22 +77,11 @@ WSGI_APPLICATION = 'DjangoPollApp.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#    }
-#}
-
 DATABASES = {
     'default': {
-       'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.environ.get('DATABASENAME', ''),
-        'USER': os.environ.get('DATABASEUSER', ''),
-        'PASSWORD': os.environ.get('DATABASEPASSWORD', ''),
-        'HOST': os.environ.get('DATABASEHOST', ''),
-        'PORT': '5432',
-    }
+    'ENGINE': 'django.db.backends.sqlite3',
+    'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+   }
 }
 
 LOGIN_URL = '/login'
